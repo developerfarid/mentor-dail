@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/logo/faveicon.jpg"
+      type="image/x-icon">
+    <script src="https://kit.fontawesome.com/822b01aa44.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./css/custom.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Mentor Dial </title>
+  </head>
+  <body>
+    <section class="homeBg">
+      <div class="position-relative py-3 py-md-4">
+        <header class="bg-[#00000059] md:bg-transparent  absolute md:relative top-0  left-1/2 md:left-0 z-50 transform -translate-x-1/2 md:translate-x-0  w-full container flxb  md:py-[25px] ">
+          <img class="cursor-pointer w-[142px] py-3 md:w-auto " src="./images/logo (2) 1 (1).svg" alt="">
+            <!-- menu for only desktop version -->
+          <ul  class="d-none d-lg-flex align-items-center gap-10 no-underline list-unstyled ">
+            <button class="btn-my">Browse mentors</button>
+            <li><a class="link-item" href="">How it works</a></li>
+            <li><a class="link-item" href="">Reviews</a></li>
+            <li><a class="link-item" href="">Blog</a></li>
+            <li><a class="link-item" href="">Login</a></li>
+          </ul>
+          <span id="menubtn" class="d-lg-none cursor-pointer"><i id="open" class="fa-solid  text-white fa-bars"></i>  </span>
+        </header>
+      </div>
+      <!-- menu for only mobile version -->
+      <div id="menuUl" class="mobile-menu d-none  ">
+        <ul  class="flxc">
+          <li><a class="link-item" href="">How it works</a></li>
+          <li><a class="link-item" href="">Reviews</a></li>
+          <li><a class="link-item" href="">Blog</a></li>
+          <li><a class="link-item" href="">Login</a></li>
+          <button class="btn-my ">Browse mentors</button>
+        </ul>
+        <i id="close" class="close-btn  fa-solid text-white fa-xmark"></i>
+      </div>
+      <!-- hero section for only desktop version -->
+      <div class="container d-none d-md-block  ">
+        <div class=" row mt-md-5 pt-5">
+      
+            <div class="col-12 col-lg-8 col-xl-7 align-items-end">
+              <div class="  flex flex-col justify-end md:h-[730px] lg:h-[830px] pb-[120px] pl-[60px] pr-[30px] ">
+                <h2 class="hero-title ">Reach your potential with a mentor</h2>
+                <p class="hero-item"><img src="./images/87-tick-square.svg" alt="">Connect with an expert who is right for you</p>
+                <p class="hero-item "><img src="./images/87-tick-square.svg" alt="">
+                  Engage in one-on-one conversations regarding your professional path
+                </p>
+                <p class="hero-item "><img src="./images/87-tick-square.svg" alt="">
+                  Attain a clearer understanding of your future career steps
+                </p>
+                <p class="hero-item "><img src="./images/87-tick-square.svg" alt="">
+                  Tap into your strengths and thrive in the workplace
+                </p>
+                <button class="btn-hero">Find Your Mentor <img class="ms-2" src="./images/Vector 3075 (2).svg" alt=""></button>
+              </div>
+            </div>
+            <div class="col-lg-5"></div>
+        </div>
+        
+      </div>
+       <!-- hero section for only mobile version -->
+      <img class="d-block d-md-none img-fluid" src="./images/hero.jpg" alt="">
+      <div class=" d-block d-md-none bg-white  flex flex-col container ">
+        <h2 class="hero-title pt-5">Reach your potential with a mentor</h2>
+        <p class="hero-item"><img src="./images/87-tick-square (1).svg" alt="">Connect with an expert who is right for you</p>
+        <p class="hero-item"><img src="./images/87-tick-square (1).svg" alt="">
+          Engage in one-on-one conversations regarding your professional path
+        </p>
+        <p class="hero-item "><img src="./images/87-tick-square (1).svg" alt="">
+          Attain a clearer understanding of your future career steps
+        </p>
+        <p class="hero-item "><img src="./images/87-tick-square (1).svg" alt="">
+          Tap into your strengths and thrive in the workplace
+        </p>
+        <button class="btn-hero ">Find Your Mentor <img class="ps-4" src="./images/Vector 3075 (2).svg" alt=""></button>
+      </div>
+      <!--  company logo  -->
+      <div class="company">
+        <div class="container d-md-flex text-center align-items-center py-5  ">
+          <p class="hero-bottom">Trusted by top companies</p>
+          <div class="d-flex gap-3 gap-lg-5 ps-md-3   align-items-center flex-wrap justify-content-center   ">
+            <img src="./images/Amazon_logo 1.svg" alt="">
+            <img src="./images/google-ar21 1.svg" alt="">
+            <img src="./images/fa6-brands_stripe.svg" alt="">
+            <img src="./images/Group 144.svg" alt="">
+            <img src="./images/Facebook-Logo.wine 1.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+      <!-- Coding Lessons section start -->
+      <section class="Members">
+        <div class="container position-relative">
+          <!-- Swiper -->
+          <h2 class="mb-0 ">Members are loving Mentordial</h2>
+          <div class="swiper mySwiper overflow-visible">
+            <div class="swiper-wrapper overflow-visible">
+              <div class="swiper-slide border-[10px] md:border-[20px] w-[300px] md:w-[620px] border-[#5AAAF6] pl-5 pr-4 py-7 md:px-[47px] md:py-[58px] ">
+                <h4 class="text-[#142134] text-lg md:text-[28px] font-medium pb-4">Alicia A.</h4>
+                <p class="text-[#6F7681] md:text-lg md:leading-[30px] font-thin ">“I really appreciate that my Coach centers me, gives me space to explore my thoughts, and then reigns me back in to focus. Then asks me what the action steps are to get to my desired outcome. I feel we unpack a lot in 30 minutes and I always feel I have clarity after I get off calls. Looking forward to our next session!”</p>
+              </div>
+              <div class="swiper-slide border-[10px] md:border-[20px] w-[300px] md:w-[620px] border-[#5AAAF6] pl-5 pr-4 py-7 md:px-[47px] md:py-[58px] ">
+                <h4 class="text-[#142134] text-lg md:text-[28px] font-medium pb-4">Alicia B.</h4>
+                <p class="text-[#6F7681] md:text-lg md:leading-[30px] font-thin ">“I really appreciate that my Coach centers me, gives me space to explore my thoughts, and then reigns me back in to focus. Then asks me what the action steps are to get to my desired outcome. I feel we unpack a lot in 30 minutes and I always feel I have clarity after I get off calls. Looking forward to our next session!”</p>
+              </div>
+              <div class="swiper-slide border-[10px] md:border-[20px] w-[300px] md:w-[620px] border-[#5AAAF6] pl-5 pr-4 py-7 md:px-[47px] md:py-[58px] ">
+                <h4 class="text-[#142134] text-lg md:text-[28px] font-medium pb-4">Alicia C.</h4>
+                <p class="text-[#6F7681] md:text-lg md:leading-[30px] font-thin ">“I really appreciate that my Coach centers me, gives me space to explore my thoughts, and then reigns me back in to focus. Then asks me what the action steps are to get to my desired outcome. I feel we unpack a lot in 30 minutes and I always feel I have clarity after I get off calls. Looking forward to our next session!”</p>
+              </div>
+              <div class="swiper-slide border-[10px] md:border-[20px] w-[300px] md:w-[620px] border-[#5AAAF6] pl-5 pr-4 py-7 md:px-[47px] md:py-[58px] ">
+                <h4 class="text-[#142134] text-lg md:text-[28px] font-medium pb-4">Alicia D.</h4>
+                <p class="text-[#6F7681] md:text-lg md:leading-[30px] font-thin ">“I really appreciate that my Coach centers me, gives me space to explore my thoughts, and then reigns me back in to focus. Then asks me what the action steps are to get to my desired outcome. I feel we unpack a lot in 30 minutes and I always feel I have clarity after I get off calls. Looking forward to our next session!”</p>
+              </div>
+              <div class="swiper-slide border-[10px] md:border-[20px] w-[300px] md:w-[620px] border-[#5AAAF6] pl-5 pr-4 py-7 md:px-[47px] md:py-[58px] ">
+                <h4 class="text-[#142134] text-lg md:text-[28px] font-medium pb-4">Alicia E.</h4>
+                <p class="text-[#6F7681] md:text-lg md:leading-[30px] font-thin ">“I really appreciate that my Coach centers me, gives me space to explore my thoughts, and then reigns me back in to focus. Then asks me what the action steps are to get to my desired outcome. I feel we unpack a lot in 30 minutes and I always feel I have clarity after I get off calls. Looking forward to our next session!”</p>
+              </div>
+            </div>
+          </div>
+          <!-- prev and next button -->
+          <div class="button-next absolute w-[40px] h-10 lg:w-[94px]  lg:h-[94px] rounded-full border-[2px] border-[#142134] flxc right-[5px] top-[70px] lg:top-[20px] transform -translate-y-1/2"><img src="./images/Vector.svg" alt=""></div>
+          <div class="button-prev absolute w-[40px] h-10 lg:w-[94px]  lg:h-[94px] rounded-full border-[2px] border-[#142134] flxc right-[50px] lg:right-[124px] top-[70px] lg:top-[20px] transform -translate-y-1/2"><img class="transform rotate-180" src="./images/Vector.svg" alt=""></div>
+        </div>
+      </section>
+
+      <!-- how its work section start -->
+
+      <section class="work">
+        <div class="container">
+          <div class="text-center pb-[50px] lg:pb-[100px]">
+            <h2>How it works</h2>
+            <p class="items">Tristique nulla risus donec fringilla nullam scelerisque diam faucibus. Sed magna orci eget <br class="d-none d-lg-block"> posuere lectus nisl diam. Vitae parturient sagittis.</p>
+          </div>
+          <div class="row g-5 align-items-center">
+       
+            <div class="col-12 col-lg-6 pe-xl-3">
+              <div class="gap-4 gap-xl-5 item">
+                <img class="items-img" src="./images/Group 1171275176.svg" alt="">
+                <div>
+                  <h3>Select a mentor</h3>
+                  <p>Tristique nulla risus donec fringilla nullam scelerisque diam faucibus. Sed magna orci eget posuere.</p>
+                </div>
+              </div>
+              <div class="gap-4 gap-xl-5 item">
+                <img class="items-img" src="./images/Group 1171275175.svg" alt="">
+                <div>
+                  <h3>Book a call</h3>
+                  <p>Tristique nulla risus donec fringilla nullam scelerisque diam faucibus. Sed magna orci eget posuere.</p>
+                </div>
+              </div>
+              <div class="gap-4 gap-xl-5 item ">
+                <img class="items-img" src="./images/Group 1171275174.svg" alt="">
+                <div>
+                  <h3>Connect anytime</h3>
+                  <p>Tristique nulla risus donec fringilla nullam scelerisque diam faucibus. Sed magna orci eget posuere.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <img class="w-full img-fluid" src="./images/Group 247.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+       <!-- how its work section End -->
+
+        <!-- Why Mentordial section start -->
+        <section class="Mentordial">
+          <div class="container">
+            <div class="text-center ">
+              <h2>Why Mentordial</h2>
+              <p>Tristique nulla risus donec fringilla nullam scelerisque diam faucibus. Sed magna orci eget <br class="d-none d-lg-block"> posuere lectus nisl diam. Vitae parturient sagittis.</p>
+
+            </div>
+            <div class="row align-items-center  g-5 ">
+            
+            
+              <div class="col-12 col-lg-6 pe-xl-5">
+                <img class="img-fluid" src="./images/Rectangle 543493.jpg" alt="">
+              </div>
+              <div class="col-12 col-lg-6 ps-3">
+                <div class="gap-4 gap-xl-5 item">
+                  <img class="items-img" src="./images/Group 1000010343.svg" alt="">
+                  <div>
+                    <h3 >Extensive coaching options</h3>
+                    <p >200 carefully selected and vetted coaches worldwide</p>
+                  </div>
+                </div>
+                <div class="gap-4 gap-xl-5 item">
+                  <img class="items-img" src="./images/Group 1000010343 (1).svg" alt="">
+                  <div>
+                    <h3 class="">Flexible virtual sessions</h3>
+                    <p class="">Connect with your mentor at your convenience, right from your phone or laptop with 1:1 virtual video sessions</p>
+                  </div>
+                </div>
+                <div class="gap-4 gap-xl-5 item">
+                  <img class="items-img" src="./images/Group 1171275279.svg" alt="">
+                  <div>
+                    <h3>Extensive coaching options</h3>
+                    <p >93% of members say that their sessions had a positive impact on their lives</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+
+      <!-- Why Mentordial section start -->
+
+      <!-- The right mentor can change section start -->
+
+      <section class="Mentor ">
+        <div class="container">
+          <div class="text-center ">
+            <h2 class="text-white ">The right mentor can change <br class="d-none d-md-block"> your life</h2>
+          </div>
+          <div class="row align-items-center  g-5 ">
+          
+            <div class="col-12 col-lg-6 pe-xl-3">
+              <div class="gap-4 gap-xl-5 item  ">
+                <img class="items-img" src="./images/Group 1000010343 (2).svg" alt="">
+                <div>
+                  <h3 >Highly qualified</h3>
+                  <p >Mentors have over 10 years of professional experience at leading companies</p>
+                </div>
+              </div>
+              <div class="gap-4 gap-xl-5 item">
+                <img class="items-img" src="./images/Group 1171275279 (1).svg" alt="">
+                <div>
+                  <h3 class="">Carefully matched</h3>
+                  <p class="">Mentors have over 10 years of professional experience at leading companies</p>
+                </div>
+              </div>
+              <div class="gap-4 gap-xl-5 item">
+                <img class="items-img" src="./images/Group 1000010343 (2).svg" alt="">
+                <div>
+                  <h3>Exceptionally diverse</h3>
+                  <p >Mentors have over 10 years of professional experience at leading companies</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 ps-lg-3 ps-xl-5 ">
+              <img class="img-fluid" src="./images/image00001 1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- The right mentor can change section end -->
+
+        <!-- Unlock your potential section start -->
+
+      <section class="Unlock">
+        <div class="container">
+          <div class=" row gy-5 align-items-center">
+            <div class="col-lg-8 col-xl-6">
+              <div class="text-center text-lg-left">
+                <h2 class="text-white text-[30px] md:text-[32px] font-semibold leading-[63px] ">Unlock your potential </h2>
+                <p class="text-white opacity-70 text-lg md:text-lg font-light  mx-auto pt-2 ">Book a call with a mentor and get the kind of personalized advice <br class="hidden md:block"> you'd never get reading articles or watching courses.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-xl-6 flex justify-content-center justify-lg-content-end d-flex align-items-center">
+              <button class="btn-find">Find Your Mentor <img class="ml-3" src="./images/Vector 3075.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+       
+      </section>
+
+       <!-- Unlock your potential section end -->
+
+       <!-- video section start -->
+
+      <section class="position-relative video">
+         <!-- video link here  -->
+        <video id="my-video"  src="./images/Nature (1).mp4"></video>
+        <!-- video play and puase button -->
+        <img id="play-pause-img"  onclick="playPause()" class="btn-play" src="./images/Group 1000010345.svg" alt="">
+      </section>
+
+      <!--FAQ section start  -->
+
+      <section class="faq">
+        <div class="container">
+          <h2 class="text-[30px] md:text-[40px] leading-9  md:leading-[62px] font-semibold text-[#142134] text-center   pb-[50px]  ">Frequently Asked Questions</h2>
+          <ul class="">
+            <li class="tabButton clickedButton tab-item">
+              <div class="flxb">
+                <h3 class=" ">How is coaching different from therapy?</h3>
+                <span><img class="one" src="./images/Left.svg" alt=""> <img class="two" src="./images/Left (1).svg" alt=""></span>
+              </div>
+              <p class=" md:text-lg text-[#142134] opacity-70 font-light md:pr-14 pt-2">Therapy (also known as psychotherapy, counseling, or “talk therapy”) is similar to coaching in some ways. Both use evidence-based techniques and intentional dialogue as the primary tools for growth and discovery, but there are also key differences between these services: Coaching focuses primarily on the present and future, while therapy focuses on the past, present, and future. Coaching is focused on personal growth and professional development, while therapy is designed to help you work through deeper issues such as anxiety, depression, or trauma.</p>
+            </li>
+            <li class="tabButton  tab-item">
+              <div class="flxb   ">
+                <h3>Who are your Coaches?</h3>
+                <span><img class="one" src="./images/Left.svg" alt=""> <img class="two" src="./images/Left (1).svg" alt=""></span>
+              </div>
+              <p>Therapy (also known as psychotherapy, counseling, or “talk therapy”) is similar to coaching in some ways. Both use evidence-based techniques and intentional dialogue as the primary tools for growth and discovery, but there are also key differences between these services: Coaching focuses primarily on the present and future, while therapy focuses on the past, present, and future. Coaching is focused on personal growth and professional development, while therapy is designed to help you work through deeper issues such as anxiety, depression, or trauma.</p>
+            </li>
+            <li class="tabButton  tab-item">
+              <div class="flxb   ">
+                <h3>What are coaching sessions like?</h3>
+                <span><img class="one" src="./images/Left.svg" alt=""> <img class="two" src="./images/Left (1).svg" alt=""></span>
+              </div>
+              <p>Therapy (also known as psychotherapy, counseling, or “talk therapy”) is similar to coaching in some ways. Both use evidence-based techniques and intentional dialogue as the primary tools for growth and discovery, but there are also key differences between these services: Coaching focuses primarily on the present and future, while therapy focuses on the past, present, and future. Coaching is focused on personal growth and professional development, while therapy is designed to help you work through deeper issues such as anxiety, depression, or trauma.</p>
+            </li>
+            <li class="tabButton  tab-item">
+              <div class="flxb   ">
+                <h3>Will my HSA / FSA cover this?</h3>
+                <span><img class="one" src="./images/Left.svg" alt=""> <img class="two" src="./images/Left (1).svg" alt=""></span>
+              </div>
+              <p>Therapy (also known as psychotherapy, counseling, or “talk therapy”) is similar to coaching in some ways. Both use evidence-based techniques and intentional dialogue as the primary tools for growth and discovery, but there are also key differences between these services: Coaching focuses primarily on the present and future, while therapy focuses on the past, present, and future. Coaching is focused on personal growth and professional development, while therapy is designed to help you work through deeper issues such as anxiety, depression, or trauma.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- faq section end -->
+
+      <!-- Subscribe section start -->
+
+      <section class=" Subscribe">
+        <div class="container">
+          <div class="text-center">
+            <h6  class=" ">Book your Session today</h6>
+            <h2 class="text-white text-[26px] md:text-[36px] font-semibold pb-6 md:pb-[30px] ">Start feeling more confident today</h2>
+            <input  type="text" name="" id="">
+            <button >Subscribe</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Subscribe section End -->
+    </main>
+    <!-- main section end -->
+
+    <!--Footer section Start -->
+    <footer class="footer">
+      <div class="container ">
+        <div class="row mb-5 gy-4">
+            <div class=" col-12  col-xl-6">
+                <img src="./images/logo (2) 1.svg" alt="">
+                <p class="footer-text ">MentorDial is a marketplace where people can talk to high-profile mentors for 1:1 advice, feedback and inspiration.</p>
+                <div class="d-flex gap-3 my-4 ">
+                  <span class="social  time "><i class="fa-brands  fa-twitter"></i></span>
+                  <span class="social  time "><i class="fa-brands fa-instagram"></i></span>
+                  <span class="social  time "><i class="fa-brands fa-linkedin"></i></span>
+                  <span class="social  time "><i class="fa-brands fa-facebook-f"></i></span>
+                </div>
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <img src="./images/mail.svg" alt="">
+                  <div>
+                    <p class="text-white font-light opacity-40 text-lg mb-[5px] ">Need a help?</p>
+                    <a class="text-white font-medium text-[20px]" href="mailto:hello@mentordial.com">hello@mentordial.com</a>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <img src="./images/calling.svg" alt="">
+                  <div>
+                    <p class="text-white font-light opacity-40 text-lg mb-[5px] ">Contact us:</p>
+                    <a class="text-white font-medium text-[20px]" href="tell:(305) 501-1394">call us at (305) 501-1394</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xl-2 col-sm-4 ">
+                <h4 class="footer-title">Users</h4>
+                <ul class="">
+                  <li><a class="footer-link time " href="">About us</a></li>
+                  <li><a class="footer-link time " href="">How it works</a></li>
+                  <li><a class="footer-link time " href="">Login/Register</a></li>
+                  <li><a class="footer-link time " href="">Blog</a></li>
+                  <li><a class="footer-link time " href="">Support</a></li>
+                  <li><a class="footer-link time " href="">Referral Program</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-xl-2 col-sm-4">
+                <h4 class="footer-title">Mentors</h4>
+                <ul class="space-y-5">
+                  <li><a class="footer-link time " href="">Become a mentor</a></li>
+                  <li><a class="footer-link time " href="">Support</a></li>
+                  <li><a class="footer-link time " href="">Referral Program</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-xl-2 col-sm-4">
+                <h4 class="footer-title ">Legal information</h4>
+                <ul class="space-y-5">
+                  <li><a class="footer-link time " href="">Terms & contditions</a></li>
+                  <li><a class="footer-link time " href="">Sitemap</a></li>
+                  <li><a class="footer-link time " href="">Referral Program</a></li>
+                </ul>
+              </div>
+        </div>
+        
+      </div>
+      <hr class="border-[1px] text-white opacity-10 mb-[30px] ">
+      <p class="text-sm text-center text-white opacity-60 mb-[13px]  font-light">All rights reserved to Mentordial</p>
+    </footer>
+    <!--Footer section Start -->
+    <!-- jquary add -->
+    <script src="./js/vendor/jquary.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- main js add -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

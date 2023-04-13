@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .time{
+    @apply transition-all duration-300 ease-linear ;
+  }
+  .flxb{
+    @apply  flex justify-between items-center
+  }
+  .flxc{
+    @apply  flex justify-center items-center
+  }
+  .link{
+    @apply py-2 md:py-0 text-center 
+  }
+  .after-effect {
+    @apply text-[55px] font-bold  inline-block relative after:absolute after:left-[50%]  transform after:-translate-x-[50%] after:bg-gradient-to-r from-[#FA5252] to-[#DD2476] after:h-0.5 after:rounded-md after:content-[""] md:after:w-28  after:top-[100%] dark:text-white;
+  }
+  .social{
+    @apply w-[50px]  h-[50px] text-white  cursor-pointer rounded-full border border-white flxc hover:bg-[#5AAAF6]
+  }
+  .footer-link{
+    @apply text-lg text-white opacity-60 font-light hover:text-[#5AAAF6] hover:underline
+  }
+  .tab-item{
+    @apply cursor-pointer bg-white rounded-[14px] px-4 py-5 md:px-[30px] md:py-[25px]
+  }
+  .btn-my{
+    @apply hidden md:flxc text-lg bg-white font-bold time  hover:bg-[#5AAAF6] hover:text-white md:h-10 lg:h-[56px] md:w-[180px] lg:w-[205px] border-[1px] border-white rounded-[554px] gap-4 
+  }
+  .link-item{
+    @apply text-white text-lg time hover:text-[#8a6ce3] font-light
+  }
+  .mobile-menu{
+    @apply fixed   justify-center items-center overflow-hidden left-0 top-0 bg-black w-screen h-screen z-[100000] 
+  }
+  .btn-hero{
+    @apply hidden md:flxc text-white text-lg mt-[55px] bg-[#5AAAF6] font-bold time   md:h-[60px] lg:h-[70px] md:w-[280px] lg:w-[312px]  rounded-[554px] gap-4 
+  }
+   .hero-item{
+   @apply flex gap-3 text-white text-lg font-thin opacity-80 
+  }
+  .hero-title{
+    @apply md:text-[60px] lg:text-[80px] md:leading-[74px] lg:leading-[93px] text-white mb-[25px] 
+  }
+  .hero-bottom{
+    @apply text-[21px] md:text-[25px] lg:text-[32px] text-white py-6 md:py-0  md:pr-10 lg:pr-20 md:border-r font-thin border-white  
+  } 
+  .hero-items{
+    @apply flex flex-wrap items-center py-6  lg:pb-0 justify-center gap-y-6 md:pl-4 lg:pl-20 gap-x-[60px] lg:gap-x-[106px]
+  }
+ 
+ 
+
+}
+
+
+
+
